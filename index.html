@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset = "UTF = 8">
+	<meta http-equiv = "X-UA-Compatible" content = "IE = edge">
+	<meta name = "viewport" content ="width=device-width, initial-scale = 1.0">
+	<title>Personal Portfolio</Title>
+	<link rel="icon" href="images/logo11.png" type="image/png">
+	<link rel= "stylesheet" href= "style.css">
+	<script src="https://kit.fontawesome.com/588ba1f5ea.js" crossorigin="anonymous"></script>
+	
+</head>
+
+<body>
+<div id = "header">
+	<div class= "container">
+		<nav>
+			<img src="images/logo.png" class="logo">
+			<ul id="sidemenu">
+				<li><a href="#header"> Home</a></li>
+				<li><a href="#about"> About</a></li>
+				<li><a href="#services"> Services</a></li>
+				<li><a href="#portfolio"> Portfolio</a></li>
+				<li><a href="#contact"> Contact</a></li>
+				<i class="fas fa-times" onclick="closemenu()"></i>
+			</ul>
+			<i class="fas fa-bars" onclick="openmenu()"></i>	
+		</nav>
+		<div class="header-text">
+			<h2>Hi !</h2> 
+			<h2>I'm <span class="span1">Hasikala Hettiarachchi</span> <span class="span2">from Sri Lanka</span></h1>
+			<h3>UI/UX Designer / Web Developer</h3>
+		
+		</div>
+	</div>		
+</div>
+
+<!- about ->
+
+<div id = "about">
+	<div class= "container">
+		<div class= "row">
+			<div class= "about-col-1">
+			<img src="images/user.jpeg"  >
+			</div>
+			<div class= "about-col-2">
+				<h1 class="subtitle">About Me</h1>
+				<p>I'm a UI/UX Designer and Web Developer from Sri Lanka, passionate about creating user-friendly
+                     interfaces for complex scenarios. When not designing, I enjoy the soothing 
+                     combination of music and reading, finding inspiration in the harmony of melodies 
+                     and captivating stories.
+                </p>
+				
+				<div class="tab-titles">
+					<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+					<p class="tab-links" onclick="opentab('experience')">Experience</p>
+					<p class="tab-links" onclick="opentab('education')">Education</p>
+				</div>
+				<div class="tab-contents active-tab" id="skills">
+					<ul>
+						<li><span>UI/UX</span><br>Designing Web Applications<br>Designing Mobile Applications </li>
+						<li><span>Web Development</span><br>Web Application Development</li>
+					</ul>
+				</div>
+				<div class="tab-contents" id="experience">
+					<ul>
+						<li><span>Working as a UI/UX Designer free lancer</span></li>
+						<li><span>Worked as a Front-End Developer Intern at Codex Innovative Solutions (2023 July - 2024 January)</span></li>
+					</ul>
+				</div>
+				<div class="tab-contents" id="education">
+					<ul>
+						<li><span>2021 - Present</span><br>Informatics Institute of Technology, Sri Lanka </li>
+						<li><span>2011 - 2019 </span><br> Sujatha Vidyalaya, Matara, Sri Lanka </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!- services ->
+
+<div id = "services">
+	<div class= "container">
+		<h1 class="subtitle">My Services</h1>
+			<div class="services-list">
+				<div>
+					<i class="fa-solid fa-crop-simple"></i>
+					<h2>UI/UX Design</h2>
+					<P><b>The aesthetic components that allow users to engage with 
+					a product, including as buttons, icons, menu bars, typography, 
+					colors, and more, are referred to as user interface (UI) design.</b></p>
+				</div>
+				<div>
+					<i class="fa-solid fa-code"></i>
+					<h2>Web Development  </h2>
+					<P><b>The development of websites and pages to reflect a brand, 
+					provide information, and guarantee a positive user experience.</b></p>
+				</div>
+			</div>
+		
+	</div>
+</div>	
+
+<!- portfolio ->
+
+<div id = "portfolio">
+	<div class= "container">
+		<h1 class="subtitle">My Work</h1>
+		<div class="work-list">
+            <div class="work">
+                <img src="images/work2.jpg">
+			    <div class="layer">
+                        <h3><b>Glass Industrial Web Design</b></h3>
+                        <p><b>A Design for a Industrial Glass Company Website</b></p>
+                        <a href="https://www.figma.com/file/FSTz73EpH9yArZ5uzc1KXb/SGI-Glass?type=design&node-id=0%3A1&mode=design&t=POy0x2zJDSMwtkV4-1" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+			</div>
+			<div class="work">
+                <img src="images/work1.jpg">
+			    <div class="layer">
+                        <h3><b>Travel Booking Web Design</b></h3>
+                        <p><b>A Design for a Travel booking Platform</b></p>
+                        <a href="https://www.figma.com/file/8hQYybUOHpXx56nZDNCT6C/Travel?type=design&node-id=0%3A1&mode=design&t=ZUGs4xsRBOZIrJI9-1" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+			</div>
+			<div class="work">
+                <img src="images/work3.jpeg">
+			    <div class="layer">
+                        <h3><b>Italian Restaurant Moblie App Design</b></h3>
+                        <p><b>A Design for a Mobile app for an Italian Restaurant</b></p>
+                        <a href="https://www.figma.com/file/EoNw7CfcEXV72Cbfh396Qk/Restaurant-App?type=design&node-id=0%3A1&mode=design&t=V2Q2TmedzwYIsdXL-1" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+			</div>
+		</div>
+		
+		<!-- <a href="https://drive.google.com/drive/folders/1JhPMXm4sMYj4bB_-hQZKLv__4dTKGYGk?usp=sharing" class="btn" target="_blank">See more</a> -->
+		
+	</div>
+</div>
+
+<!- Contact ->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>hasidh430@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>+94718895995</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/hasikala-hettiarachchi-44573a224/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+						<!-- <a href="https://www.behance.net/harindiw" target="_blank"><i class="fa-brands fa-square-behance"></i></a>
+						<a href="https://dribbble.com/harindiw" target="_blank"><i class="fa-brands fa-dribbble"></i></a>
+						<a href="https://www.fiverr.com/harindi2001?public_mode=true" target="_blank"><img src="images/fiverr.jpg"></a> -->
+					</div>	
+                <a href="images/CV - Harindi.pdf" target="_blank" download class="btn btn2">Download CV</a>
+            </div>
+			<div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+            </div>
+		</div>
+	</div>
+	
+	<div class="copyright">
+            <p>Copyright © Hasikala. Made with <i class="fa-solid fa-heart"></i> by Easy Tutorials</p>
+    </div>
+</div>
+
+
+<script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+
+
+
+    </script>
+
+<script>
+var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+</script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyo1ajETPio_HW1FBtFxiu-tdEawXQ6BxZfOQTbzy_c2AR3lVTxvQmeEOHUWr6sjYvcNA/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+			msg.innerHTML = "Message Sent Successfully"
+			setTimeout(function(){
+				msg.innerHTML = ""
+			},5000)
+			form.reset()
+	  })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+
+</body>
+
+</html>
